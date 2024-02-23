@@ -6304,6 +6304,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bech32@npm:=2.0.0":
+  version: 2.0.0
+  resolution: "bech32@npm:2.0.0"
+  checksum: fa15acb270b59aa496734a01f9155677b478987b773bf701f465858bf1606c6a970085babd43d71ce61895f1baa594cb41a2cd1394bd2c6698f03cc2d811300e
+  languageName: node
+  linkType: hard
+
 "better-opn@npm:^2.1.1":
   version: 2.1.1
   resolution: "better-opn@npm:2.1.1"
@@ -6317,6 +6324,13 @@ __metadata:
   version: 5.2.2
   resolution: "big.js@npm:5.2.2"
   checksum: b89b6e8419b097a8fb4ed2399a1931a68c612bce3cfd5ca8c214b2d017531191070f990598de2fc6f3f993d91c0f08aa82697717f6b3b8732c9731866d233c9e
+  languageName: node
+  linkType: hard
+
+"bigi@npm:^1.1.0, bigi@npm:^1.4.2":
+  version: 1.4.2
+  resolution: "bigi@npm:1.4.2"
+  checksum: 82b5ed2c779b2065a269fd8233c39e26bef9e5b129ca1b66579d056de1f5e2627850ac42bd952c477b28560f216760709bf486078299efe617b1898c8ea70306
   languageName: node
   linkType: hard
 
@@ -6336,6 +6350,47 @@ __metadata:
   version: 2.2.0
   resolution: "binary-extensions@npm:2.2.0"
   checksum: ccd267956c58d2315f5d3ea6757cf09863c5fc703e50fbeb13a7dc849b812ef76e3cf9ca8f35a0c48498776a7478d7b4a0418e1e2b8cb9cb9731f2922aaad7f8
+  languageName: node
+  linkType: hard
+
+"bip-schnorr@npm:=0.6.4":
+  version: 0.6.4
+  resolution: "bip-schnorr@npm:0.6.4"
+  dependencies:
+    bigi: ^1.4.2
+    ecurve: ^1.0.6
+    js-sha256: ^0.9.0
+    randombytes: ^2.1.0
+    safe-buffer: ^5.2.1
+  checksum: c5b2f97924854bee5cb64e5b357a6d315678c1fbdf3879475d0bcdbf9d32a776158e5700de7e9c05ac11fdd55e2257f14d0b8864c25acb585f8b371feaad11f8
+  languageName: node
+  linkType: hard
+
+"bitcore-lib@npm:^10.0.23":
+  version: 10.0.23
+  resolution: "bitcore-lib@npm:10.0.23"
+  dependencies:
+    bech32: =2.0.0
+    bip-schnorr: =0.6.4
+    bn.js: =4.11.8
+    bs58: ^4.0.1
+    buffer-compare: =1.1.1
+    elliptic: ^6.5.3
+    inherits: =2.0.1
+    lodash: ^4.17.20
+  checksum: 3cf1509bd2a8203a50da7afdce4ae331c4e54aad67c3d638b2ef07fc6825b3f60467d00f32dc4bf9c34558eeb4076fc5d37fec7a272cbe153fb23c67a3a8803c
+  languageName: node
+  linkType: hard
+
+"bitcore-mnemonic@npm:~10.0.11":
+  version: 10.0.23
+  resolution: "bitcore-mnemonic@npm:10.0.23"
+  dependencies:
+    bitcore-lib: ^10.0.23
+    unorm: ^1.4.1
+  peerDependencies:
+    bitcore-lib: "*"
+  checksum: e739c156f834f641fb0b1f281188195f4a0a93e7b8042e781cb8ae376859e48afaa834ad77d6b72e216ee5bbf3cbd7c90bf5b04392ccb9ccc9749b4710295b5a
   languageName: node
   linkType: hard
 
@@ -6368,6 +6423,13 @@ __metadata:
   version: 4.11.6
   resolution: "bn.js@npm:4.11.6"
   checksum: db23047bf06fdf9cf74401c8e76bca9f55313c81df382247d2c753868b368562e69171716b81b7038ada8860af18346fd4bcd1cf9d4963f923fe8e54e61cb58a
+  languageName: node
+  linkType: hard
+
+"bn.js@npm:=4.11.8":
+  version: 4.11.8
+  resolution: "bn.js@npm:4.11.8"
+  checksum: 80d4709cd58a21f0be8201e9e5859fea5ef133318e9800c8454cd334625c6e1caea593ca21f9b9a085fb560fbc12fb2fb3514363f8604258db924237fd039139
   languageName: node
   linkType: hard
 
@@ -6658,7 +6720,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bs58@npm:^4.0.0":
+"bs58@npm:^4.0.0, bs58@npm:^4.0.1":
   version: 4.0.1
   resolution: "bs58@npm:4.0.1"
   dependencies:
@@ -6684,6 +6746,13 @@ __metadata:
   dependencies:
     node-int64: ^0.4.0
   checksum: 9ba4dc58ce86300c862bffc3ae91f00b2a03b01ee07f3564beeeaf82aa243b8b03ba53f123b0b842c190d4399b94697970c8e7cf7b1ea44b61aa28c3526a4449
+  languageName: node
+  linkType: hard
+
+"buffer-compare@npm:=1.1.1":
+  version: 1.1.1
+  resolution: "buffer-compare@npm:1.1.1"
+  checksum: fe9a25cdd0c878eb689d928de4f8d6d3b4062b2a2c92bd4a1f6a5dcd22de17a95604bd102d4590542b2eb13779762c009f3193e840092dc9ed2c0dad8b726655
   languageName: node
   linkType: hard
 
@@ -7727,6 +7796,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"crypto-js@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "crypto-js@npm:4.2.0"
+  checksum: f051666dbc077c8324777f44fbd3aaea2986f198fe85092535130d17026c7c2ccf2d23ee5b29b36f7a4a07312db2fae23c9094b644cc35f7858b1b4fcaf27774
+  languageName: node
+  linkType: hard
+
 "crypto-random-string@npm:^2.0.0":
   version: 2.0.0
   resolution: "crypto-random-string@npm:2.0.0"
@@ -8491,6 +8567,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ecurve@npm:^1.0.6":
+  version: 1.0.6
+  resolution: "ecurve@npm:1.0.6"
+  dependencies:
+    bigi: ^1.1.0
+    safe-buffer: ^5.0.1
+  checksum: 11185533d4d204f3b419df2c3ff2123187cc30c098d792c7f139f0c02a11a84181de185c2b18501d505242f1f1a6d27f693ff4ea5e8b9348fc27bae509dda618
+  languageName: node
+  linkType: hard
+
 "ee-first@npm:1.1.1":
   version: 1.1.1
   resolution: "ee-first@npm:1.1.1"
@@ -8545,6 +8631,13 @@ __metadata:
   version: 3.0.0
   resolution: "emojis-list@npm:3.0.0"
   checksum: ddaaa02542e1e9436c03970eeed445f4ed29a5337dfba0fe0c38dfdd2af5da2429c2a0821304e8a8d1cadf27fdd5b22ff793571fa803ae16852a6975c65e8e70
+  languageName: node
+  linkType: hard
+
+"empty-module@npm:^0.0.2":
+  version: 0.0.2
+  resolution: "empty-module@npm:0.0.2"
+  checksum: 6d986ed6dbe5856a8f8f769e2700beae0a3f43b3be0e159618a620ad24717f25706a60a0416a6f18a3a29b0e570aa1a8cc90dea1e3d2b7791f4bbdb0458b4c19
   languageName: node
   linkType: hard
 
@@ -11380,7 +11473,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"inherits@npm:2.0.1":
+"inherits@npm:2.0.1, inherits@npm:=2.0.1":
   version: 2.0.1
   resolution: "inherits@npm:2.0.1"
   checksum: 6536b9377296d4ce8ee89c5c543cb75030934e61af42dba98a428e7d026938c5985ea4d1e3b87743a5b834f40ed1187f89c2d7479e9d59e41d2d1051aefba07b
@@ -12583,6 +12676,13 @@ __metadata:
     "@sideway/formula": ^3.0.0
     "@sideway/pinpoint": ^2.0.0
   checksum: a4cd53a83e68de7727ba48daa79047183d65a9bb6c2ad4f3028cb56a7526d113860c8189e95371d8d3a8315c344a478547f875daf3856f2d9477a995ca1ef05a
+  languageName: node
+  linkType: hard
+
+"js-sha256@npm:^0.9.0":
+  version: 0.9.0
+  resolution: "js-sha256@npm:0.9.0"
+  checksum: ffad54b3373f81581e245866abfda50a62c483803a28176dd5c28fd2d313e0bdf830e77dac7ff8afd193c53031618920f3d98daf21cbbe80082753ab639c0365
   languageName: node
   linkType: hard
 
@@ -16191,7 +16291,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ripemd160@npm:^2.0.0, ripemd160@npm:^2.0.1":
+"ripemd160@npm:^2.0.0, ripemd160@npm:^2.0.1, ripemd160@npm:~2.0.2":
   version: 2.0.2
   resolution: "ripemd160@npm:2.0.2"
   dependencies:
@@ -16224,6 +16324,8 @@ __metadata:
     "@metamask/eslint-config-typescript": ^12.0.0
     "@typescript-eslint/eslint-plugin": ^5.42.1
     "@typescript-eslint/parser": ^5.42.1
+    crypto-js: ^4.2.0
+    empty-module: ^0.0.2
     eslint: ^8.45.0
     eslint-config-prettier: ^8.5.0
     eslint-plugin-import: ~2.26.0
@@ -16234,7 +16336,9 @@ __metadata:
     eslint-plugin-promise: ^6.1.1
     prettier: ^2.7.1
     prettier-plugin-packagejson: ^2.2.18
+    process: ^0.11.10
     sharp: ^0.30.7
+    symbol-sdk: 3.1.0-test
     typescript: ^4.7.4
   languageName: unknown
   linkType: soft
@@ -17488,6 +17592,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"symbol-crypto-wasm-node@npm:^0.1.1":
+  version: 0.1.1
+  resolution: "symbol-crypto-wasm-node@npm:0.1.1"
+  checksum: 3ddede4ceb160933b62c0e91bf3363eb1eeeadfdd7b78aac37180a9ec5b9e6fdab81ff3a68082d543409f325a6d59da3d4a378a60105f31919ba1522dff9af9e
+  languageName: node
+  linkType: hard
+
+"symbol-sdk@npm:3.1.0-test":
+  version: 3.1.0-test
+  resolution: "symbol-sdk@npm:3.1.0-test"
+  dependencies:
+    "@noble/hashes": ~1.3.2
+    bitcore-mnemonic: ~10.0.11
+    ripemd160: ~2.0.2
+    symbol-crypto-wasm-node: ^0.1.1
+  dependenciesMeta:
+    symbol-crypto-wasm-node:
+      optional: true
+  checksum: 72893a1aac4b937bd95770d1917a9b94a29e0b2b18a5fae89eca879d111715e7fb07770242b34ef7d58b7cd0430f274d1ee63d6e2919ad4edb1d7b67e1c5e9ee
+  languageName: node
+  linkType: hard
+
 "syntax-error@npm:^1.1.1":
   version: 1.4.0
   resolution: "syntax-error@npm:1.4.0"
@@ -18132,6 +18258,13 @@ __metadata:
   dependencies:
     normalize-path: ^2.1.1
   checksum: 3be30e48579fc6c7390bd59b4ab9e745fede0c164dfb7351cf710bd1dbef8484b1441186205af6bcb13b731c0c88caf9b33459f7bf8c89e79c046e656ae433f0
+  languageName: node
+  linkType: hard
+
+"unorm@npm:^1.4.1":
+  version: 1.6.0
+  resolution: "unorm@npm:1.6.0"
+  checksum: 9a86546256a45f855b6cfe719086785d6aada94f63778cecdecece8d814ac26af76cb6da70130da0a08b8803bbf0986e56c7ec4249038198f3de02607fffd811
   languageName: node
   linkType: hard
 

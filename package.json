@@ -56,5 +56,11 @@
       "@lavamoat/preinstall-always-fail": false,
       "sharp": true
     }
+  },
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "empty-module": "^0.0.2",
+    "process": "^0.11.10",
+    "symbol-sdk": "3.1.0-test"
   }
 }
